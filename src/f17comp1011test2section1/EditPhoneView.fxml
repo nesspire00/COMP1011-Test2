@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="f17comp1011test2section1.EditPhoneViewController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="281.0" layoutY="82.0" prefHeight="600.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Edit Phone">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <GridPane maxWidth="300.0" prefHeight="258.0" prefWidth="300.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="274.0" minWidth="10.0" prefWidth="140.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="409.0" minWidth="10.0" prefWidth="160.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Manufacturer" GridPane.rowIndex="1" />
+                  <Label text="Model" GridPane.rowIndex="2" />
+                  <Label text="Memory" GridPane.rowIndex="3" />
+                  <Label text="Color" GridPane.rowIndex="4" />
+                  <Label text="Screen Size in inches" GridPane.rowIndex="5" />
+                  <TextField fx:id="manufacutureTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="modelTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="memoryTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="colourTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="screenSizeTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label text="Phone ID" />
+                  <Spinner fx:id="phoneIDSpinner" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <Button mnemonicParsing="false" onAction="#loadPhoneInfo" text="Load Device" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
